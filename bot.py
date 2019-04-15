@@ -267,7 +267,7 @@ class Input:
     def process(self):
 
         if (self.content_list[0] == '/help'):
-            response = ("<b>Rollem Bot Στα Ελληνικά - Help</b>\r\n"
+            response = ("<b>Zaria the Bot Στα Ελληνικά - Βοήθεια</b>\r\n"
                 "This bot allows you to roll all kinds of dice in "
                 "your Telegram messages. To roll dice, you can use the "
                 "<code>/roll</code> or <code>/r</code> commands, followed by "
