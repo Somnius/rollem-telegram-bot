@@ -1,12 +1,12 @@
-# RollEm Telegram Bot
-A polyhedral dice rolling bot for [Telegram](https://telegram.org). To use this bot in Telegram, [click here](https://telegram.me/rollembot). This bot was built to enable playing tabletop roleplaying games (RPGs) over Telegram.
+# RollEm Telegram Bot Greek 🇬🇷 (Hellenic) Edition
+Ένα bot για να ρίχνει πολύπλευρα ζάρια στο [Telegram](https://telegram.org). Για να χρησιμοποιήσετε την αυθεντική "Αγγλική" έκδοση του bot στο Telegram, [κλικ εδώ](https://telegram.me/rollembot). Για να χρησιμοποιήσετε την Ελληνική έκδοσή μας, (όχι έτοιμο ακόμα) [κλικ εδώ](https://telegram.me/zaria). Αυτό το bot δημιουργήθηκε για να μπορούν παίκτες που χρησιμοποιούν Telegram να παίξουν tabletop roleplaying games (RPGs).
 
-## Requires
-* Telepot - See https://github.com/nickoala/telepot for installation instructions.
+## Απαιτήσεις
+* Telepot - Δείτε https://github.com/nickoala/telepot για οδηγίες εγκατάστασης.
 
-## Current Features
-* `/roll [equation] [label]` or `/r [equation] [label]`  
- * Equation is required, label is optional. 
+## Τρέχον Δυνατότητες
+* `/roll [equation] [label]` ή `/r [equation] [label]`  
+ * Η φόρμουλα χρειάζεται, τίτλος είναι προαιρετικός. 
  * Roll dice using [dice notation](https://en.wikipedia.org/wiki/Dice_notation) as the equation (includes Fate/Fudge Dice with 4dF). Do not include spaces in the equation. 
  * Example: `/roll 4d8+16-2d4`
 * `/rf [modifier] [label]`  
