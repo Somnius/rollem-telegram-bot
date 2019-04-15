@@ -11,17 +11,17 @@ from datetime import datetime
 from ast import literal_eval
 
 ladder = {
-    8  : 'Legendary',
-    7  : 'Epic',
-    6  : 'Fantastic',
-    5  : 'Superb',
-    4  : 'Great',
-    3  : 'Good',
-    2  : 'Fair',
-    1  : 'Average',
-    0  : 'Mediocre',
-    -1 : 'Poor',
-    -2 : 'Terrible'
+    8  : 'Μυθικά',
+    7  : 'Έπος',
+    6  : 'Φανταστικά',
+    5  : 'Απίστευτα',
+    4  : 'Τέλεια',
+    3  : 'Καλά',
+    2  : 'Κάπως Καλύτερα',
+    1  : 'Περίπου Μέτρια',
+    0  : 'Μέτρια',
+    -1 : 'Χάλια',
+    -2 : 'Αίσχος'
 }
 
       ##########################################
@@ -91,9 +91,9 @@ class Dice:
 
         # Set ladder value for final result
         if self.result['total'] < -2:
-            ladder_result = 'Beyond Terrible'
+            ladder_result = 'Χειρότερα και από Αίσχος'
         elif self.result['total'] > 8:
-            ladder_result = 'Beyond Legendary'
+            ladder_result = 'Καλύτερα και από Μυθικά'
         else:
             ladder_result = ladder[self.result['total']]
 
@@ -132,7 +132,7 @@ class Dice:
                             loop_num = 1
 
                         if loop_num > 1000:
-                            raise Exception('Maximum number of rollable dice is 100')
+                            raise Exception('Μέγιστος αριθμός ζαριών που μπορείτε να ρίξετε είναι 100')
                         if dice.group(3) and int(dice.group(2)) >= 2:
                             explodes = True
                             die_sides = int(dice.group(2))
@@ -140,7 +140,7 @@ class Dice:
                                 num = int(dice.group(3)[2:]) + 1
                                 if num > die_sides:
                                     raise Exception(
-                                        'Explosion minimum value must be lower or equal to the die\'s sides number!')
+                                        'Explosion minimum value πρέπει να είναι χαμηλότερο ή ίδιο με τις πλευρές του ζαριού!')
                                 else:
                                     min_explosion = num
                             else:
@@ -186,7 +186,7 @@ class Dice:
             if bool(re.match('^[0-9+*/ ()-]+$', self.result['total'])):
                 self.result['total'] = eval(self.result['total'])
             else:
-                raise Exception('Request was not a valid equation!')
+                raise Exception('Το αίτημα δεν ήταν σωστή εξίσωση!')
 
             print(''.join(self.result['equation']) + ' = ' + str(self.result['total']))
 
@@ -198,15 +198,15 @@ class Dice:
             if len(self.result['visual']) > 275:
                 self.result['visual'] = self.result['visual'][0:275] + ' . . . )'
 
-            response = (curnt_input.user + ' rolled<b>' + self.label + '</b>:\r\n'        
+            response = (curnt_input.user + ' έριξε<b>' + self.label + '</b>:\r\n'        
                 + self.result['visual'] + ' =\r\n<b>' + str(self.result['total']) + '</b>')
             error = ''
 
         except Exception as e:
-            response = (curnt_input.user + ': <b>Invalid equation!</b>\r\n' +
-                'Please use <a href="https://en.wikipedia.org/wiki/Dice_notation">dice notation</a>.\r\n' +
-                'For example: <code>3d6</code>, or <code>1d20+5</code>, or <code>d12</code>\r\n\r\n' +
-                'For more information, type <code>/help</code>'
+            response = (curnt_input.user + ': <b>Λάθος εξίσωση!</b>\r\n' +
+                'Παρακαλώ χρησιμοποιήστε <a href="https://en.wikipedia.org/wiki/Dice_notation">dice notation</a>.\r\n' +
+                'Για παράδειγμα: <code>3d6</code>, ή <code>1d20+5</code>, ή <code>d12</code>\r\n\r\n' +
+                'Για περισσότερες πληροφορίες, πατήστε <code>/help</code>'
                 )
             print(e)
             print(response)
@@ -267,7 +267,7 @@ class Input:
     def process(self):
 
         if (self.content_list[0] == '/help'):
-            response = ("<b>Rollem Bot - Help</b>\r\n"
+            response = ("<b>Rollem Bot Στα Ελληνικά - Help</b>\r\n"
                 "This bot allows you to roll all kinds of dice in "
                 "your Telegram messages. To roll dice, you can use the "
                 "<code>/roll</code> or <code>/r</code> commands, followed by "
