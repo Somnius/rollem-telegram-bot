@@ -1,4 +1,4 @@
-# RollEm Telegram Bot Greek 🇬🇷 (Hellenic) Edition
+# Zaria Telegram Bot Greek 🇬🇷 (Hellenic) Edition (RollEm Fork)
 Ένα bot για να ρίχνει πολύπλευρα ζάρια στο [Telegram](https://telegram.org). Για να χρησιμοποιήσετε την αυθεντική "Αγγλική" έκδοση του bot στο Telegram, [κλικ εδώ](https://telegram.me/rollembot). Για να χρησιμοποιήσετε την Ελληνική έκδοσή μας, (όχι έτοιμο ακόμα) [κλικ εδώ](https://t.me/ZariaTheBot). Αυτό το bot δημιουργήθηκε για να μπορούν παίκτες που χρησιμοποιούν Telegram να παίξουν tabletop roleplaying games (RPGs).
 
 ## Απαιτήσεις
