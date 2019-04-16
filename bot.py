@@ -290,11 +290,12 @@ class Input:
                 "would like to say thanks, support further development, or "
                 "check out some of my other projects, take a look at the links "
                 "below.\r\n"
-                " - <a href='https://github.com/treetrnk'>Github</a>\r\n"
-                " - <a href='https://rpg.nathanhare.net'>Blog about Fate Core and other RPGs</a>\r\n"
-                " - <a href='https://nathanhare.net'>Portfolio</a>\r\n"
+                " - <a href='https://github.com/Somnius'>Github</a>\r\n"
+                " - <a href='https://twitter.com/SomniusX'>@SomniusX on Twitter</a>\r\n"
+                " - <a href='https://t.me/SomniusX'>@SomniusX on Telegram</a>\r\n"
+                " - <a href='https://about.me/Lefteris'>About.me Profile</a>\r\n"
                 " - <a href='https://www.drivethrurpg.com/browse/pub/10796/Nathan-Hare'>DriveThruRPG Webstore</a>\r\n"
-                " - <a href='https://paypal.me/treetrnk'>Paypal</a>"
+                " - <a href='https://paypal.me/lefteros'>Paypal</a>"
                 )
         else: #if dice roll
             curnt_dice.set_attrbs(self.content_list)
