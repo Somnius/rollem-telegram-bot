@@ -206,7 +206,7 @@ class Dice:
             response = (curnt_input.user + ': <b>Λάθος εξίσωση!</b>\r\n' +
                 'Παρακαλώ χρησιμοποιήστε <a href="https://en.wikipedia.org/wiki/Dice_notation">dice notation</a>.\r\n' +
                 'Για παράδειγμα: <code>3d6</code>, ή <code>1d20+5</code>, ή <code>d12</code>\r\n\r\n' +
-                'Για περισσότερες πληροφορίες, πατήστε <code>/rhelp</code>'
+                'Για περισσότερες πληροφορίες, πατήστε <code>/help</code>'
                 )
             print(e)
             print(response)
@@ -228,7 +228,7 @@ class Input:
             '/r',
             '/roll',
             '/rf',
-            '/rhelp',
+            '/help',
         ]
 
     ####################
@@ -266,7 +266,7 @@ class Input:
     ##################### would be sent to a different class than one to roll dice.
     def process(self):
 
-        if (self.content_list[0] == '/rhelp'):
+        if (self.content_list[0] == '/help'):
             response = ("<b>Zaria the Bot Στα Ελληνικά - Βοήθεια</b>\r\n"
                 "This bot allows you to roll all kinds of dice in "
                 "your Telegram messages. To roll dice, you can use the "
